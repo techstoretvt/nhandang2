@@ -1,0 +1,107 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.unShow {
+    display: none !important;
+}
+
+
+/* btn */
+
+
+/* content  left*/
+.content {
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    /* background-color: #ccc; */
+    /* align-items: center; */
+    padding: 10px 20px;
+    /* background-color: #333; */
+    gap: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    /* z-index: 1000; */
+}
+
+.content_left {
+    width: 40%;
+    height: fit-content;
+    /* border: 1px solid #fff; */
+    aspect-ratio: 1/1;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-media {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-media-item {
+    width: 30px;
+    height: 30px;
+    /* background-color: aqua; */
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-media-item.active {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.btn-media-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wrap-media {
+    flex: 1;
+    /* border: 3px solid green; */
+    position: fixed;
+    inset: 0;
+}
+
+#webcam-container:not(:empty),
+#image-container:not(:empty),
+#video-container:not(:empty) {
+    width: 100%;
+    height: 100%;
+}
+
+#webcam-container:not(:empty) canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#webcam-container {}
+
+#label-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #333;
+    font-size: 12px;
+}
+
+#label-container2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #333;
+    font-size: 12px;
+}
