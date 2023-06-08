@@ -86,8 +86,9 @@ async function predict() {
 }
 
 
-document.addEventListener('dbclick', function () {
+document.addEventListener('dblclick', function () {
     window.close()
+    console.log('vao1');
 });
 
 
